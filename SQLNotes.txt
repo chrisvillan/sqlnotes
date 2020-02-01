@@ -1,0 +1,28 @@
+--Basics--
+
+SELECT * FROM [tablename];
+
+SELECT [col1],[col2],... FROM [tablename];
+
+SELECT * FROM [tablename] WHERE [colname] = [value];
+// returns rows of matching value
+//ex. SELECT * FROM family_members WHERE species = 'human';
+// "=" can be replace with any other boolean expression
+
+SELECT * FROM [tbname] WHERE [expression] AND [expression2]
+// AND statement adds multiple expression
+// OR statement applicable 
+
+SELECT * FROM [tbname] WHERE [col] IN ([val1], [val2])
+// IN statement allows for multiple values search 
+// returns rows with val1 and val2 in col 
+// NOT IN statement applicable
+
+SELECT DISTINCT [col] FROM [tbname] WHERE [expression]
+//returns rows without duplicates 
+
+SELECT * FROM [tbname] ORDER BY [col];
+//ORDER BY statement sorts rows based on col. Ascending is default
+//Add DESC at end of statement for descending sort
+
+finished Lesson 10, continue to Lesson 11 in sql easy site
